@@ -1,0 +1,9 @@
+.env
+storages/*
+*/.DS_Store
+*/__pycache__
+*/static/upload/*
+__pycache__
+init.sh
+.idea
+celerybeat-schedule

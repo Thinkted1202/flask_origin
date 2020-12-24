@@ -1,0 +1,24 @@
+<html lang="zh">
+<head>
+	{% include "mains/layouts/header.html" ignore missing %}
+	{% block css %}{% endblock %}
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+	<script src="https://unpkg.com/vuex@2.0.0"></script>
+	<script src="https://unpkg.com/http-vue-loader"></script>
+</head>
+<body class="">
+	<div id="app" v-cloak>
+		<div id="top" class="wrap">
+			<notify></notify>
+			<layout-header></layout-header>
+			<!-- content start -->
+			{% block body %}
+			{% endblock %}
+			<!-- content end -->
+			{% include "mains/layouts/footer.html" ignore missing %}
+		</div>
+		<lightbox></lightbox>
+	</div>
+</body>
+	{% block js %}{% endblock %}
+</html>
